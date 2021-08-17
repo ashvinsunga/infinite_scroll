@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@150&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap');
 
 
 html {
@@ -8,16 +8,19 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
-    font-family: Lato, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: whitesmoke;
 }
 
 h1 {
+    transform: translate(120%);
+    position: fixed;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 15px;
     font-size: 40px;
     letter-spacing: 5px;
+    background-color: whitesmoke;
 }
 
 /* Loader */
@@ -36,4 +39,26 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.image-container {
+    display: block;
+    margin: 10px 30%;
+}
+
+.image-container img {
+    margin-top: 5px;
+    width: 100%;
+}
+
+
+/*Media Query: Large Smartphone  */
+@media screen and (max-width: 600px){
+h1 {
+    font-size: 20px;
+}
+
+.image-container {
+    margin: 10px 10%;
+}
 }
